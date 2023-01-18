@@ -98,8 +98,8 @@ public class Principal {
 
     private static void aplicarAumentoDeSalario(LinkedList<Funcionario> listaDeFuncionarios) {
 
-        for (int i = 0; i < listaDeFuncionarios.size(); i++) {
-            listaDeFuncionarios.get(i).setSalario(listaDeFuncionarios.get(i).getSalario().multiply(BigDecimal.valueOf(1.1)));
+        for (Funcionario listaDeFuncionario : listaDeFuncionarios) {
+            listaDeFuncionario.setSalario(listaDeFuncionario.getSalario().multiply(BigDecimal.valueOf(1.1)));
         }
     }
 
