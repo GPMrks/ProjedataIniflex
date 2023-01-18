@@ -19,7 +19,7 @@ public class Principal {
         System.out.println("\nLista dos funcionários: \n");
 
         for (Funcionario func : listaDeFuncionarios) {
-            System.out.println(func);
+            System.out.println(func.toString());
         }
 
         System.out.println("\n________________________________________________________________\n");
