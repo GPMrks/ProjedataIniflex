@@ -10,11 +10,11 @@ Considerando que uma indústria possui as pessoas/funcionários abaixo:
 
 Diante disso, você deve desenvolver um projeto java, com os seguintes requisitos:
 
-1– Classe Pessoa com os atributos: nome (String) e data nascimento (LocalDate).
+1– Classe ProjedataIniflex.Pessoa com os atributos: nome (String) e data nascimento (LocalDate).
 
-2 – Classe Funcionário que estenda a classe Pessoa, com os atributos: salário (BigDecimal) e função (String).
+2 – Classe Funcionário que estenda a classe ProjedataIniflex.Pessoa, com os atributos: salário (BigDecimal) e função (String).
 
-3 – Deve conter uma classe Principal para executar as seguintes ações: <br>
+3 – Deve conter uma classe ProjedataIniflex.Principal para executar as seguintes ações: <br>
 3.1 – Inserir todos os funcionários, na mesma ordem e informações da tabela acima. <br>
 3.2 – Remover o funcionário “João” da lista. <br>
 3.3 – Imprimir todos os funcionários com todas suas informações, sendo que: <br>
@@ -30,6 +30,18 @@ Diante disso, você deve desenvolver um projeto java, com os seguintes requisito
 3.12 – Imprimir quantos salários mínimos ganha cada funcionário, considerando que o salário mínimo é R$1212.00. <br>
 
 ![Tabela de Funcionários](table.png)
+
+---
+
+## Passos para rodar o programa
+
+* Download do arquivo ProjedataIniflex.jar dentro da pasta Target
+* Abrir o cmd e ir até a pasta onde o arquivo foi salvo
+* Executar o comando java -jar ProjedataIniflex.jar
+
+```
+C:\local\do\arquivo: java -jar ProjedataIniflex.jar
+```
 
 ---
 
