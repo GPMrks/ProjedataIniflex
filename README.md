@@ -33,7 +33,7 @@ Diante disso, você deve desenvolver um projeto java, com os seguintes requisito
 
 ---
 
-## Passos para rodar o programa
+## Passos para executar o programa
 
 * Download do arquivo ProjedataIniflex.jar dentro da pasta Target
 * Abrir o cmd e ir até a pasta onde o arquivo foi salvo
@@ -45,7 +45,7 @@ C:\local\do\arquivo: java -jar ProjedataIniflex.jar
 
 ---
 
-## Resultado rodado no programa
+## Resultado
 
 Lista dos funcionários: 
 
