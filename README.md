@@ -46,57 +46,68 @@ C:\local\do\arquivo: java -jar ProjedataIniflex.jar
 ---
 
 ## Resultado
+```
+Lista dos funcionários:
 
-Lista dos funcionários: 
-
-Nome: Maria  |  Data de Nascimento: 18/10/2000  |  Salário: 2.009,44  |  Função: Operador <br>
-Nome: Caio  |  Data de Nascimento: 02/05/1961  |  Salário: 9.836,14  |  Função: Coordenador <br>
-Nome: Miguel  |  Data de Nascimento: 14/10/1988  |  Salário: 19.119,88  |  Função: Diretor <br>
-Nome: Alice  |  Data de Nascimento: 05/01/1995  |  Salário: 2.234,68  |  Função: Recepcionista <br>
-Nome: Heitor  |  Data de Nascimento: 19/11/1999  |  Salário: 1.582,72  |  Função: Operador <br>
-Nome: Arthur  |  Data de Nascimento: 31/03/1993  |  Salário: 4.071,84  |  Função: Contador <br>
-Nome: Laura  |  Data de Nascimento: 08/07/1994  |  Salário: 3.017,45  |  Função: Gerente <br>
-Nome: Heloísa  |  Data de Nascimento: 24/05/2003  |  Salário: 1.606,85  |  Função: Eletricista <br>
-Nome: Helena  |  Data de Nascimento: 02/09/1996  |  Salário: 2.799,93  |  Função: Gerente <br>
-
-________________________________________________________________
-
-Lista dos funcionários ordenados por função: 
-
-Operador: [Nome: Maria  |  Data de Nascimento: 18/10/2000  |  Salário: 2.210,38  |  Função: Operador, Nome: Heitor  |  Data de Nascimento: 19/11/1999  |  Salário: 1.740,99  |  Função: Operador]
-
-Eletricista: [Nome: Heloísa  |  Data de Nascimento: 24/05/2003  |  Salário: 1.767,54  |  Função: Eletricista]
-
-Recepcionista: [Nome: Alice  |  Data de Nascimento: 05/01/1995  |  Salário: 2.458,15  |  Função: Recepcionista]
-
-Diretor: [Nome: Miguel  |  Data de Nascimento: 14/10/1988  |  Salário: 21.031,87  |  Função: Diretor]
-
-Gerente: [Nome: Laura  |  Data de Nascimento: 08/07/1994  |  Salário: 3.319,20  |  Função: Gerente, Nome: Helena  |  Data de Nascimento: 02/09/1996  |  Salário: 3.079,92  |  Função: Gerente]
-
-Coordenador: [Nome: Caio  |  Data de Nascimento: 02/05/1961  |  Salário: 10.819,75  |  Função: Coordenador]
-
-Contador: [Nome: Arthur  |  Data de Nascimento: 31/03/1993  |  Salário: 4.479,02  |  Função: Contador]
+Nome                Data de Nascimento       Salário             Função              
+Maria               18/10/2000               R$2.009,44          Operador            
+Caio                02/05/1961               R$9.836,14          Coordenador         
+Miguel              14/10/1988               R$19.119,88         Diretor             
+Alice               05/01/1995               R$2.234,68          Recepcionista       
+Heitor              19/11/1999               R$1.582,72          Operador            
+Arthur              31/03/1993               R$4.071,84          Contador            
+Laura               08/07/1994               R$3.017,45          Gerente             
+Heloísa             24/05/2003               R$1.606,85          Eletricista         
+Helena              02/09/1996               R$2.799,93          Gerente             
 
 ________________________________________________________________
 
-Lista dos funcionários com mês de aniversário 10 e 12: 
+Lista dos funcionários ordenados por função:
 
-Nome: Maria  |  Data de Nascimento: 18/10/2000  |  Salário: 2.210,38  |  Função: Operador <br>
-Nome: Miguel  |  Data de Nascimento: 14/10/1988  |  Salário: 21.031,87  |  Função: Diretor <br>
+Operador:
+Maria               18/10/2000               R$2.210,38            Operador            
+Heitor              19/11/1999               R$1.740,99            Operador            
+
+Eletricista:
+Heloísa             24/05/2003               R$1.767,54            Eletricista
+
+Recepcionista:
+Alice               05/01/1995               R$2.458,15            Recepcionista
+
+Diretor:
+Miguel              14/10/1988               R$21.031,87           Diretor
+
+Gerente:
+Laura               08/07/1994               R$3.319,20            Gerente             
+Helena              02/09/1996               R$3.079,92            Gerente
+
+Coordenador:
+Caio                02/05/1961               R$10.819,75           Coordenador
+
+Contador:
+Arthur              31/03/1993               R$4.479,02            Contador
 
 ________________________________________________________________
 
-Lista dos funcionários ordenados em ordem alfabética: 
+Lista dos funcionários com mês de aniversário 10 e 12:
 
-Nome: Alice  |  Data de Nascimento: 05/01/1995  |  Salário: 2.458,15  |  Função: Recepcionista <br>
-Nome: Arthur  |  Data de Nascimento: 31/03/1993  |  Salário: 4.479,02  |  Função: Contador <br>
-Nome: Caio  |  Data de Nascimento: 02/05/1961  |  Salário: 10.819,75  |  Função: Coordenador <br>
-Nome: Heitor  |  Data de Nascimento: 19/11/1999  |  Salário: 1.740,99  |  Função: Operador <br>
-Nome: Helena  |  Data de Nascimento: 02/09/1996  |  Salário: 3.079,92  |  Função: Gerente <br>
-Nome: Heloísa  |  Data de Nascimento: 24/05/2003  |  Salário: 1.767,54  |  Função: Eletricista <br>
-Nome: Laura  |  Data de Nascimento: 08/07/1994  |  Salário: 3.319,20  |  Função: Gerente <br>
-Nome: Maria  |  Data de Nascimento: 18/10/2000  |  Salário: 2.210,38  |  Função: Operador <br>
-Nome: Miguel  |  Data de Nascimento: 14/10/1988  |  Salário: 21.031,87  |  Função: Diretor <br>
+Maria               18/10/2000               R$2.210,38            Operador            
+Miguel              14/10/1988               R$21.031,87           Diretor
+
+________________________________________________________________
+
+Lista dos funcionários ordenados em ordem alfabética:
+
+Nome                Data de Nascimento       Salário             Função              
+Alice               05/01/1995               R$2.458,15          Recepcionista       
+Arthur              31/03/1993               R$4.479,02          Contador            
+Caio                02/05/1961               R$10.819,75         Coordenador         
+Heitor              19/11/1999               R$1.740,99          Operador            
+Helena              02/09/1996               R$3.079,92          Gerente             
+Heloísa             24/05/2003               R$1.767,54          Eletricista         
+Laura               08/07/1994               R$3.319,20          Gerente             
+Maria               18/10/2000               R$2.210,38          Operador            
+Miguel              14/10/1988               R$21.031,87         Diretor
 
 ________________________________________________________________
 
@@ -106,14 +117,15 @@ ________________________________________________________________
 
 Quantidade de salários mínimos:
 
-Alice: 2.03 <br>
-Arthur: 3.70 <br>
-Caio: 8.93 <br>
-Heitor: 1.44 <br>
-Helena: 2.54 <br>
-Heloísa: 1.46 <br>
-Laura: 2.74 <br>
-Maria: 1.82 <br>
-Miguel: 17.35 <br>
+Alice: 2.03
+Arthur: 3.70
+Caio: 8.93
+Heitor: 1.44
+Helena: 2.54
+Heloísa: 1.46
+Laura: 2.74
+Maria: 1.82
+Miguel: 17.35
 
 Process finished with exit code 0
+```
