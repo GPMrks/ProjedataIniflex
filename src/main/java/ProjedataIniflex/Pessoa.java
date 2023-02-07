@@ -1,6 +1,7 @@
 package ProjedataIniflex;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.Objects;
 
 public class Pessoa {
@@ -28,9 +29,15 @@ public class Pessoa {
         return dataNascimento;
     }
 
+    public String getDataNascimentoFormatada() {
+        return dataNascimento.format(formataData);
+    }
+
     public void setDataNascimento(LocalDate dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
+
+    DateTimeFormatter formataData = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
     @Override
     public boolean equals(Object o) {

@@ -20,9 +20,7 @@ public class Principal {
 
         System.out.println("\nLista dos funcionários: \n");
 
-        for (Funcionario func : listaDeFuncionarios) {
-            System.out.println(func.toString());
-        }
+        imprimirListaDeFuncionarios(listaDeFuncionarios);
 
         System.out.println("\n________________________________________________________________\n");
 
@@ -33,7 +31,9 @@ public class Principal {
         System.out.println("Lista dos funcionários ordenados por função: \n");
 
         for (Map.Entry<Object, List<Funcionario>> entry : funcionariosAgrupadosPorFuncao.entrySet()) {
-            System.out.println(entry.getKey() + ": " + entry.getValue() + "\n");
+            System.out.println(entry.getKey() + ": ");
+            entry.getValue().stream().forEach(System.out::println);
+            System.out.println();
         }
 
         System.out.println("________________________________________________________________\n");
@@ -56,9 +56,7 @@ public class Principal {
 
         listaDeFuncionarios.sort(Comparator.comparing(Pessoa::getNome));
 
-        for (Funcionario func : listaDeFuncionarios) {
-            System.out.println(func);
-        }
+        imprimirListaDeFuncionarios(listaDeFuncionarios);
 
         System.out.println("\n________________________________________________________________\n");
 
@@ -96,6 +94,14 @@ public class Principal {
         listaDeFuncionarios.add(new Funcionario("Laura", LocalDate.of(1994, 7, 8), BigDecimal.valueOf(3017.45), "Gerente"));
         listaDeFuncionarios.add(new Funcionario("Heloísa", LocalDate.of(2003, 5, 24), BigDecimal.valueOf(1606.85), "Eletricista"));
         listaDeFuncionarios.add(new Funcionario("Helena", LocalDate.of(1996, 9, 2), BigDecimal.valueOf(2799.93), "Gerente"));
+    }
+
+    private static void imprimirListaDeFuncionarios(LinkedList<Funcionario> listaDeFuncionarios) {
+        System.out.printf("%-20s%-25s%-20s%-20s\n", "Nome", "Data de Nascimento", "Salário", "Função");
+
+        for (Funcionario func : listaDeFuncionarios) {
+            System.out.printf("%-20s%-25sR$%-18s%-20s\n", func.getNome(), func.getDataNascimentoFormatada(), func.getSalarioFormatado(), func.getFuncao());
+        }
     }
 
     private static void aplicarAumentoDeSalario(LinkedList<Funcionario> listaDeFuncionarios) {

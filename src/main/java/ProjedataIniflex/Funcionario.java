@@ -33,6 +33,10 @@ public class Funcionario extends Pessoa {
         this.funcao = funcao;
     }
 
+    public String getSalarioFormatado() {
+        return formatarSalario.format(salario).replace(".", ",").replaceFirst(",", ".");
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -47,14 +51,10 @@ public class Funcionario extends Pessoa {
         return Objects.hash(super.hashCode(), salario, funcao);
     }
 
-    DateTimeFormatter formataData = DateTimeFormatter.ofPattern("dd/MM/yyyy");
     DecimalFormat formatarSalario = new DecimalFormat("###,##0.00");
 
     @Override
     public String toString() {
-        return  "Nome: " + this.getNome() + "  | " +
-                " Data de Nascimento: " + this.getDataNascimento().format(formataData) + "  | " +
-                " Salário: " + formatarSalario.format(salario).replace(".", ",").replaceFirst(",", ".") + "  | " +
-                " Função: " + funcao;
+        return String.format("%-20s%-25sR$%-20s%-20s", this.getNome(), this.getDataNascimentoFormatada(), this.getSalarioFormatado(), this.getFuncao());
     }
 }
